@@ -1,4 +1,7 @@
 /*
+* git submodule add git@github.com:google/googletest.git
+* git submodule init
+* git submodule update
 * g++ -std=c++11 -isystem ./googletest/googletest/include/ -I ./googletest/googletest/ -pthread -c ./googletest/googletest/src/gtest-all.cc
 * ar -rv libtest.a gtest-all.o
 * g++ -std=c++11 -isystem ./googletest/googletest/include/ -pthread gcd.cpp libtest.a
