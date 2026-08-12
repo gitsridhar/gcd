@@ -42,4 +42,17 @@ fn main() {
     let num4: u64 = 30;
     let result2 = gcd(num3, num4);
     println!("The greatest common divisor of {} and {} is: {}", num3, num4, result2);
+
+    let foo = 42;
+    if foo == 42 {
+        println!("foo is 42");
+    }
+}
+
+#[test]
+fn test_gcd() {
+    assert_eq!(gcd(14,15), 1);
+    assert_eq!(gcd(2 * 3 * 5 * 11 * 17,
+                   3 * 7 * 11 * 13 * 19),
+                   3 * 11);
 }
